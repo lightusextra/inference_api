@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from fastapi import APIRouter, File, UploadFile
+from fastapi import File, UploadFile
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -8,6 +8,7 @@ app = FastAPI()
 origins = [
     "https://murin-an.herokuapp.com/",
     "https://pytorch-cpu.herokuapp.com",
+    "https://renewalapp.herokuapp.com/",
     "http://127.0.0.1:5000",
     "http://localhost:5000",
     "http://127.0.0.1:8000",
