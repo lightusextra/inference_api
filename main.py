@@ -35,6 +35,10 @@ def simple_post(param: str):
         'message': f'You posted `{param}`!'
     }
 
+@app.post('/api/fetch')
+def fetch():
+    return {"result":"OK"}
+
 #ラベル数
 n_class = 6
 #モデル名
